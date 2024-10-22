@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9576f67792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header class="fondoColor">
+        <a href="../index.html">
+            <img src="../assets/img/logo.png" width="150" height="90" alt="Logo Repuestos">
+        </a>
+        <nav>
+            <ul>
+                <li><a class="colorList" href="../index.html">Inicio</a></li>
+                <li><a class="colorList" href="../pages/productos.html">Productos</a></li>
+                <li><a class="colorList" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class="colorList" href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li><a class="colorList" href="../pages/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+                
+                
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Comunicate Con Nosotros</h1>
+        <h2>Complete El Formulario</h2>
+        <form>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingrese Su Nombre Completo" required name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" placeholder="Ingrese Su Apellido Completo" required name="apellido" id="apellido">
+            </div>
+
+            <div>
+                <label for="pass">Contraseña:</label>
+                <input type="password" placeholder="Ingrese Su Contraseña" required name="pass" id="pass">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Ingrese Su Email" required name="email" id="email">
+
+            </div>
+
+            <div>
+                <label for="provincia">Ingrese En Que Provincia Vive:</label>
+                <select name="provincia" id="provincia">
+                    <option value="1">Buenos Aires</option>
+                    <option value="2" selected>Capital Federal</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="telefono">Ingrese Su Telefono</label>
+                <input type="tel" placeholder="Ingrese nu numero de telefono" required name="telefono" id="telefono">
+            </div>
+
+            <div>
+                <input type="reset" value="Limpiar Formulario">
+                <input type="submit" value="Enviar Formulario">
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="colorFooter">
+        <a href="../index.html">
+            <img src="../assets/img/logo.png" alt="Logo Repuestos" width="150" height="90">
+        </a>
+        <nav>
+            <h3 class="colorFooterH3">Contenidos</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <h3 class="colorFooterH3">SUSCRIBITE A NUESTRO NEWSLETTER</h3>
+            <form action="">
+                <input type="email" placeholder="Tu Email" id="emailSuscripcion" name="emailSuscripcion">
+                <input type="submit" value="SUSCRIBIRME">
+            </form>
+        </div>
+        <div>
+            <h3 class="colorFooterH3">Conectate Con Nosotros</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div>
+            <a href="" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div>
+            <p>&copy; 2024 Repuestos Originales. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fuente adicional para h1 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Fuente adicional para h2 y h3 */
+
+/* Reset y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de Header */
+
+.imagenFondoPrincipal {
+    background-image: url('../assets/img/fondo.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    z-index: 1000;
+}
+
+
+.anclaHeader{
+    display: inline-block;
+    margin-top: 30px;
+    color: #3e117e;
+    font-size: 30px;
+    padding: 10px;
+    border:2px solid  #510d1b;
+    border-radius: 5px;
+    
+}
+
+.centradoHeader{
+    text-align: center;
+}
+
+
+
+.colorHeaderH1{
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 50px;    
+    color: #f07f0d;
+    text-align: center;
+}
+.colorHeaderH2 {
+    font-family: 'Roboto', sans-serif; /* Fuente para h2 */
+    font-size: 30px; /* Tamaño de h2 */
+    color: #167e11; /* Color de h2 */
+    text-align: center;
+}
+
+.colorHeaderP{
+        margin: 0 auto;
+        margin-top: 30px;
+        padding:10px;
+        font-size: 30px;
+        color: rgb(28, 27, 27);
+}
+
+.listaItemHeader {
+    font-size: 30px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.imgSeparadas{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+
+.fondoColor{
+    background-color: #dadada;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+}
+
+/* Estilos de Main */
+.colorMain {
+    background-image: linear-gradient(to right top, #b6b6e1, #a9a9ce, #9c9cbc, #8f8faa, #828298, #7a7a9a, #72729c, #6a6a9d, #6363b1, #5b5cc4, #5253d6, #4949e7);
+    
+}
+
+/* Títulos y textos de Main */
+.colorMainH1 {
+    font-family: 'Lobster', cursive; /* Fuente para h1 */
+    font-size: 3.5rem; /* Tamaño de h1 */
+    color: #efcd44; /* Color de h1 */
+    text-align: justify;
+}
+
+.colorMainH2 {
+    font-family: 'Roboto', sans-serif; /* Fuente para h2 */
+    font-size: 2.5rem; /* Tamaño de h2 */
+    text-align: center;
+    color: #167e11; /* Color de h2 */
+}
+
+.colorMainH3 {
+    font-family: 'Roboto', sans-serif; /* Fuente para h3 */
+    font-size: 2rem; /* Tamaño de h3 */
+    color: #a80b0b; /* Color de h3 */
+}
+
+.colorMainP {
+    font-family: 'Playfair Display', serif; /* Fuente para párrafos */
+    font-size: 1.5rem; /* Tamaño de párrafos */
+    color: #d11212; /* Color de párrafos */
+}
+
+/* Estilos de Footer */
+.colorFooter {
+    background-color: rgba(1, 36, 3, 0.477);
+    font-family: 'Montserrat', sans-serif; /* Fuente específica para Footer */
+    color: #fff; /* Color de texto para Footer */
+}
+
+/* Títulos y textos de Footer */
+.colorFooterH1 {
+    font-family: 'Roboto', sans-serif; /* Fuente para h1 en Footer */
+    font-size: 2.5rem; /* Tamaño de h1 en Footer */
+    color: #167e11; /* Color específico para h1 en Footer */
+}
+
+.colorFooterH2 {
+    font-family: 'Roboto', sans-serif; /* Fuente para h2 en Footer */
+    font-size: 2rem; /* Tamaño de h2 en Footer */
+    color: #591c0f; /* Color específico para h2 en Footer */
+}
+
+.colorFooterH3 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para h3 en Footer */
+    font-size: 1.5rem; /* Tamaño de h3 en Footer */
+    color: #591c0f; /* Color específico para títulos en Footer */
+}
+
+.colorFooterP {
+    font-family: 'Montserrat', sans-serif; /* Fuente para párrafos en Footer */
+    font-size: 1rem; /* Tamaño de párrafos en Footer */
+    color: #ffffff; /* Color específico para texto en Footer */
+}
+
+/* Estilos generales */
+.colorList {
+    color: rgb(166, 0, 255);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Iconos de redes sociales */
+.fa-whatsapp {
+    color: #25D366;
+    font-size: 64px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.fa-facebook {
+    color: blue;
+    font-size: 64px;
+}
+
+.fa-instagram {
+    color: violet;
+    font-size: 64px;
+}
