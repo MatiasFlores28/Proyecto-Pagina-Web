@@ -1,9 +1,8 @@
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fuente adicional para h1 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Fuente adicional para h2 y h3 */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* Reset y configuración básica */
 * {
     margin: 0;
@@ -11,60 +10,33 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(255, 250, 242);
+  }
+
 /* Estilos de Header */
 
-.imagenFondoPrincipal {
-    background-image: url('../assets/img/fondo.png');
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: sticky;
-    z-index: 1000;
-}
-
-
-.anclaHeader{
-    display: inline-block;
-    margin-top: 30px;
-    color: #3e117e;
-    font-size: 30px;
-    padding: 10px;
-    border:2px solid  #510d1b;
-    border-radius: 5px;
-    
-}
-
-.centradoHeader{
-    text-align: center;
-}
-
-
-
-.colorHeaderH1{
-    padding-top: 30px;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 50px;    
-    color: #f07f0d;
-    text-align: center;
-}
-.colorHeaderH2 {
-    font-family: 'Roboto', sans-serif; /* Fuente para h2 */
-    font-size: 30px; /* Tamaño de h2 */
-    color: #167e11; /* Color de h2 */
-    text-align: center;
-}
-
-.colorHeaderP{
-        margin: 0 auto;
-        margin-top: 30px;
-        padding:10px;
-        font-size: 30px;
-        color: rgb(28, 27, 27);
+.header{
+    background-color: rgb(145, 142, 135);
+    font-size: 10px;
+    .logo{
+        width: 100px;
+    }
+    nav{
+        ul{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color:  #474a92;
+                font-size: 25px;
+              
+            }
+        }
+    }
 }
 
 .listaItemHeader {
-    font-size: 30px;
+    font-size: 20px;
     list-style: none;
     display: inline-block;
     margin-right: 50px;
@@ -77,49 +49,113 @@
 
 
 
-.fondoColor{
-    background-color: #dadada;
+
+
+
+/* Estilos de Main */
+
+.imagenFondoPrincipal {
+    background-image: url("../assets/img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 100vh;
+    text-align: center;
+    .contenedorTextoPrincipalIndex{
+        margin:0 auto;
+        margin-top: 30px;
+        /*border:2px solid  #510d1b;*/
+        padding:10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 50%;
+        font-size: 10px;
+        color: rgb(28, 27, 27);
+        p {
+            font-family: 'Roboto', sans-serif; /* Fuente legible y moderna */
+            font-size: 18px; /* Tamaño ideal para la legibilidad */
+            color: #333; /* Color oscuro para buen contraste */
+            
+        }
+        a{
+            display:inline-block;
+            margin-top:30px;
+            text-decoration: none;
+            color: rgb(72, 52, 221);
+            font-size: 2.5em;
+            border:2px solid black;
+            padding:8px;
+            border-radius:5px;
+            /*box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);*/
+
+        }
+    }
+   
 }
 
-/* Logo */
-.logo {
+
+.centradoMain{
+    text-align: center;
+}
+
+.logoMain{
     width: 100px;
 }
 
-/* Estilos de Main */
 .colorMain {
-    background-image: linear-gradient(to right top, #b6b6e1, #a9a9ce, #9c9cbc, #8f8faa, #828298, #7a7a9a, #72729c, #6a6a9d, #6363b1, #5b5cc4, #5253d6, #4949e7);
+    background-image: radial-gradient(red,yellow);
     
 }
 
 /* Títulos y textos de Main */
 .colorMainH1 {
-    font-family: 'Lobster', cursive; /* Fuente para h1 */
-    font-size: 3.5rem; /* Tamaño de h1 */
-    color: #efcd44; /* Color de h1 */
-    text-align: justify;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-size: 56px; /* Tamaño grande para destacar */
+    color: #992812; /* Color destacado */
+    text-align: center;
+    padding-top: 40px;
 }
 
 .colorMainH2 {
-    font-family: 'Roboto', sans-serif; /* Fuente para h2 */
-    font-size: 2.5rem; /* Tamaño de h2 */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    font-size: 40px; /* Tamaño intermedio */
     text-align: center;
-    color: #167e11; /* Color de h2 */
+    color: #072b05; /* Color verde oscuro */
 }
 
 .colorMainH3 {
-    font-family: 'Roboto', sans-serif; /* Fuente para h3 */
-    font-size: 2rem; /* Tamaño de h3 */
-    color: #a80b0b; /* Color de h3 */
+    font-family: 'Roboto', sans-serif; /* Fuente legible */
+    font-size: 32px; /* Tamaño más pequeño para subtítulos */
+    color: #83a80b; /* Color rojo oscuro */
 }
 
-.colorMainP {
-    font-family: 'Playfair Display', serif; /* Fuente para párrafos */
-    font-size: 1.5rem; /* Tamaño de párrafos */
-    color: #d11212; /* Color de párrafos */
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos de Footer */
+
+.footer{
+background-color: rgba(31, 200, 118, 0.643);
+    font-size: 30px;
+}
+
+.listaItemFooter {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
 .colorFooter {
     background-color: rgba(1, 36, 3, 0.477);
     font-family: 'Montserrat', sans-serif; /* Fuente específica para Footer */
@@ -141,34 +177,36 @@
 
 .colorFooterH3 {
     font-family: 'Montserrat', sans-serif; /* Fuente para h3 en Footer */
-    font-size: 1.5rem; /* Tamaño de h3 en Footer */
-    color: #591c0f; /* Color específico para títulos en Footer */
+    font-size: 20px; /* Tamaño de h3 en Footer */
+    color: #b7371a; /* Color específico para títulos en Footer */
 }
 
 .colorFooterP {
     font-family: 'Montserrat', sans-serif; /* Fuente para párrafos en Footer */
-    font-size: 1rem; /* Tamaño de párrafos en Footer */
-    color: #ffffff; /* Color específico para texto en Footer */
-}
-
-/* Estilos generales */
-.colorList {
-    color: rgb(166, 0, 255);
-    text-decoration: none;
+    font-size: 20px; /* Tamaño de párrafos en Footer */
+    color: #642929; /* Color específico para texto en Footer */
 }
 
 a{
     text-decoration: none;
 }
 
+
 /* Iconos de redes sociales */
 .fa-whatsapp {
     color: #25D366;
-    font-size: 64px;
+    font-size: 50px;
     position:fixed;
     bottom: 20px;
-    right: 20px;
+    left: 1285px;
 
+}
+
+.logoFooter{
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 1240px;
 }
 
 .fa-facebook {
