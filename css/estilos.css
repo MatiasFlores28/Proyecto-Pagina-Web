@@ -14,38 +14,54 @@ body{
     background-color: rgb(255, 250, 242);
   }
 
+  @media  screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .header ul {
+        font-size: 100px; /* Ajusta el tamaño de la fuente */
+        margin-top: 50px;
+    }
+}
+
 /* Estilos de Header */
 
 .header{
     background-color: rgb(145, 142, 135);
-    font-size: 10px;
+    display: flex;
+    font-size: 20px;
+    position: sticky;
+    height: 80px;
+    top: 0;
+    z-index: 1000;
     .logo{
-        width: 100px;
+        width: 120px;
     }
     nav{
-        ul{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color:  #474a92;
-                font-size: 25px;
-              
-            }
-        }
+   position: absolute;
+    left: 60%;
+    top: 50%; 
+
+    ul{
+      list-style: none;  
+    }
+
+    li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+    a{
+        list-style: none;
+        text-decoration: none;
     }
 }
-
-.listaItemHeader {
-    font-size: 20px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 50px;
 }
 
-.imgSeparadas{
-    display: inline-block;
-    margin-right: 50px;
-}
+
 
 
 
@@ -55,12 +71,14 @@ body{
 /* Estilos de Main */
 
 .imagenFondoPrincipal {
+    padding-top: 10px;
+    padding-bottom: 50px;
     background-image: url("../assets/img/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
     height: 100vh;
-    text-align: center;
+
     .contenedorTextoPrincipalIndex{
         margin:0 auto;
         margin-top: 30px;
@@ -81,8 +99,8 @@ body{
             display:inline-block;
             margin-top:30px;
             text-decoration: none;
-            color: rgb(72, 52, 221);
-            font-size: 2.5em;
+            color: #333;
+            font-size: 20px;
             border:2px solid black;
             padding:8px;
             border-radius:5px;
@@ -93,18 +111,45 @@ body{
    
 }
 
+.contenedorProductos {
+    background: linear-gradient(180deg, #6fd677 0%, #6fd677 0%); /* Degradado suave */
+    ;
+    
+}
+
+.galeria{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:60px;
+    div{
+        text-align: center;
+        background-color:#474a92;
+        border:1px solid gray;
+        color:black;
+        width: 160px;
+        height:160px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        img{
+            /*box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 198);*/
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+}
+
 
 .centradoMain{
     text-align: center;
 }
 
 .logoMain{
-    width: 100px;
-}
-
-.colorMain {
-    background-image: radial-gradient(red,yellow);
-    
+    width: 110px;
+    margin-bottom: 10px;
 }
 
 /* Títulos y textos de Main */
@@ -117,20 +162,124 @@ body{
 }
 
 .colorMainH2 {
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
-    font-size: 40px; /* Tamaño intermedio */
+    font-family: 'Montserrat', sans-serif;
+    color: #072b05; /* Verde oscuro */
+    font-size: 36px;
     text-align: center;
-    color: #072b05; /* Color verde oscuro */
+    margin-bottom: 30px;
 }
 
 .colorMainH3 {
     font-family: 'Roboto', sans-serif; /* Fuente legible */
-    font-size: 32px; /* Tamaño más pequeño para subtítulos */
+    font-size: 20px; /* Tamaño más pequeño para subtítulos */
     color: #83a80b; /* Color rojo oscuro */
+    
+}
+
+.colorMainP{
+    font-family: 'Montserrat', sans-serif; /* Fuente para párrafos en Footer */
+    font-size: 20px; /* Tamaño de párrafos en Footer */
+    color: #642929; /* Color específico para texto en Footer */
+    text-align: center;
+}
+
+
+/*NOSOTROS INDEX*/
+.nosotros {
+    h1{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 60px;
+    }
+    .contenedorNosotros {
+        margin: 0 auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 0.5fr,0.5f,1fr;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-areas: 
+                            "nuestraHistoria nosotrosImagen"
+                            "mision nosotrosImagen"
+                            "vision nosotrosImagen";
+        margin-top: 20px;
+        padding-top: 100px;
+        .nosotrosImagen {
+            grid-area: nosotrosImagen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                width: 80%;
+                height: 80%;
+                
+            }
+        }
+
+        .nuestraHistoria {
+            grid-area: nuestraHistoria;
+            
+            
+        }
+
+        .mision {
+            grid-area: mision;
+            
+        }
+
+        .vision {
+            grid-area: vision;
+           
+        }
+    }
 }
 
 
 
+
+
+
+/*FIN DEL ESTILOS DE INDEX*/
+
+
+/*GALERIA DE PAGINA DE PRODUCTOS*/
+
+.galeriaGridRepuestos{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    grid-template-areas: "motor embrague"
+                         "distribucion freno"
+                         "suspension refrigeracion";
+    gap: 25px;
+        .hijo_1{
+            grid-area:motor;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           }
+           .hijo_2{
+            grid-area:embrague;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           }
+           .hijo_3{
+            grid-area: distribucion;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           }
+           .hijo_4{
+            grid-area: freno;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           }
+           
+}
 
 
 
@@ -143,78 +292,71 @@ body{
 
 /* Estilos de Footer */
 
+/* Estilos Generales para el Footer */
 .footer{
-background-color: rgba(31, 200, 118, 0.643);
-    font-size: 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    background-color: black;
+    .logo{
+        width: 100px;
+    }
+
+    ul{
+        list-style: none;
+      
+        a{
+            text-decoration: none;
+            color:  #510d1b;
+            font-size: 1.5em;
+        }
+        .fa-instagram{
+            font-size: 5em;
+            color: #e592a2;
+        }
+        .fa-facebook{
+            font-size: 20px;
+            color: blue;
+        }
+        .fa-whatsapp{
+            font-size: 5em;
+            color:rgb(44, 181, 44);
+        }
+    }
+
 }
 
-.listaItemFooter {
-    font-size: 20px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 50px;
-}
+        
+     
 
 
-.colorFooter {
-    background-color: rgba(1, 36, 3, 0.477);
-    font-family: 'Montserrat', sans-serif; /* Fuente específica para Footer */
-    color: #fff; /* Color de texto para Footer */
-}
-
-/* Títulos y textos de Footer */
 .colorFooterH1 {
-    font-family: 'Roboto', sans-serif; /* Fuente para h1 en Footer */
-    font-size: 2.5rem; /* Tamaño de h1 en Footer */
-    color: #167e11; /* Color específico para h1 en Footer */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #167e11;
 }
 
 .colorFooterH2 {
-    font-family: 'Roboto', sans-serif; /* Fuente para h2 en Footer */
-    font-size: 2rem; /* Tamaño de h2 en Footer */
-    color: #591c0f; /* Color específico para h2 en Footer */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #591c0f;
 }
 
 .colorFooterH3 {
-    font-family: 'Montserrat', sans-serif; /* Fuente para h3 en Footer */
-    font-size: 20px; /* Tamaño de h3 en Footer */
-    color: #b7371a; /* Color específico para títulos en Footer */
+    font-size: 20px;
+    color: #b7371a;
 }
 
 .colorFooterP {
-    font-family: 'Montserrat', sans-serif; /* Fuente para párrafos en Footer */
-    font-size: 20px; /* Tamaño de párrafos en Footer */
-    color: #642929; /* Color específico para texto en Footer */
+    text-align: left;
+    font-size: 20px;
+    color: #642929;
+    width: 100%;
+    margin-top: 20px;
 }
 
-a{
-    text-decoration: none;
-}
 
 
-/* Iconos de redes sociales */
-.fa-whatsapp {
-    color: #25D366;
-    font-size: 50px;
-    position:fixed;
-    bottom: 20px;
-    left: 1285px;
 
-}
-
-.logoFooter{
-    width: 50px;
-    position: fixed;
-    bottom: 20px;
-    left: 1240px;
-}
-
-.fa-facebook {
-    color: blue;
-    font-size: 64px;
-}
-
-.fa-instagram {
-    color: violet;
-    font-size: 64px;
-}

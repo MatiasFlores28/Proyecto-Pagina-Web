@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="fondoColor">
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" width="150" height="90" alt="Logo Repuestos">
+    <header class="header">
+        <a href="#">
+            <img class="logoMain" src="../assets/img/logo.png"  alt="Nuestra Historia">
         </a>
         <nav>
             <ul>
-                <li><a class="colorList" href="../index.html">Inicio</a></li>
-                <li><a class="colorList" href="../pages/productos.html">Productos</a></li>
-                <li><a class="colorList" href="../pages/contacto.html">Contacto</a></li>
-                <li><a class="colorList" href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a class="colorList" href="../pages/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../index.html">Inicio</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/productos.html">Productos</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/contacto.html">Contacto</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
                 
                 
             </ul>
@@ -29,25 +29,39 @@
     </header>
 
 
-    <main>
+    <main class="contenedorProductos">
+        <section class="anchoMain">
 
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52563.4397426195!2d-58.46221536406665!3d-34.573426428703655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729080950921!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
+            <h2 class="colorMainH2">Nuestra Historia</h2>
+            <p class="colorMainP">
+            Desde nuestros comienzos, en Casa de Repuestos Fiat nos hemos dedicado a brindar piezas originales y de la más alta calidad para vehículos Fiat. Fundado con la visión de cubrir la demanda de repuestos confiables, nos hemos consolidado en el mercado gracias a nuestra experiencia y compromiso con los estándares de la marca. Hoy, seguimos creciendo con la misma pasión por ofrecer a nuestros clientes los mejores productos para el mantenimiento y reparación de sus vehículos.
+            </p>
+
+
+            <h2 class="colorMainH2">Misión</h2>
+            <p class="colorMainP">
+            Nuestra misión es ofrecer piezas originales Fiat con un enfoque en durabilidad y satisfacción del cliente. Nos esforzamos por mantener altos estándares de calidad en cada producto, asegurando que cada cliente obtenga repuestos que cumplan con las especificaciones de la marca y las expectativas de rendimiento.
+            </p>
+
+            <h2 class="colorMainH2">Visión</h2>
+            <p class="colorMainP">
+            A futuro, aspiramos a convertirnos en el proveedor de repuestos Fiat líder en la región, siendo reconocidos por nuestra atención al cliente, nuestra calidad de productos y el compromiso constante con la satisfacción del cliente.
+            </p>
+        </section>
     </main>
 
-    <footer class="colorFooter">
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" alt="Logo Repuestos" width="150" height="90">
+    <footer class="footer">
+        <a href="#">
+            <img class="flechaFooter" src="../assets/img/flecha.png" alt="arriba" >
         </a>
         <nav>
             <h3 class="colorFooterH3">Contenidos</h3>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li class="listaItemFooter"><a href="../index.html">Inicio</a></li>
+                <li class="listaItemFooter"><a href="../pages/productos.html">Productos</a></li>
+                <li class="listaItemFooter"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="listaItemFooter"><a href="../pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
         <h3 class="colorFooterH3">SUSCRIBITE A NUESTRO NEWSLETTER</h3>
@@ -69,7 +83,7 @@
             <a href="" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <div>
-            <p>&copy; 2024 Repuestos Originales. Todos los derechos reservados.</p>
+            <p class="colorFooterP">&copy; 2024 Repuestos Originales. Todos los derechos reservados.</p>
         </div>
 
     </footer>

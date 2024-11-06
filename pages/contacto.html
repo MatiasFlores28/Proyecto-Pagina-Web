@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header class="fondoColor">
+    <header class="header">
         <a href="../index.html">
-            <img src="../assets/img/logo.png" width="150" height="90" alt="Logo Repuestos">
+            <img class="logo" src="../assets/img/logo.png" alt="Contacto">
         </a>
         <nav>
             <ul>
-                <li><a class="colorList" href="../index.html">Inicio</a></li>
-                <li><a class="colorList" href="../pages/productos.html">Productos</a></li>
-                <li><a class="colorList" href="../pages/contacto.html">Contacto</a></li>
-                <li><a class="colorList" href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a class="colorList" href="../pages/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../index.html">Inicio</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/productos.html">Productos</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/contacto.html">Contacto</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="listaItemHeader"><a class="colorList" href="../pages/carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
                 
                 
             </ul>
@@ -29,9 +29,9 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Comunicate Con Nosotros</h1>
-        <h2>Complete El Formulario</h2>
+    <main class="contenedorProductos">
+        <h1 class="colorMainH1">Comunicate Con Nosotros</h1>
+        <h2 class="colorMainH2">Complete El Formulario</h2>
         <form>
             <div>
                 <label for="nombre">Nombre:</label>
@@ -73,19 +73,24 @@
             </div>
 
         </form>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52563.4397426195!2d-58.46221536406665!3d-34.573426428703655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729080950921!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer class="colorFooter">
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" alt="Logo Repuestos" width="150" height="90">
+        <a href="#">
+            <img class="flechaFooter" src="../assets/img/flecha.png" alt="Logo Repuestos" >
         </a>
+
         <nav>
             <h3 class="colorFooterH3">Contenidos</h3>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li class="listaItemFooter"><a href="../index.html">Inicio</a></li>
+                <li class="listaItemFooter"><a href="../pages/productos.html">Productos</a></li>
+                <li class="listaItemFooter"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="listaItemFooter"><a href="../pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
         <h3 class="colorFooterH3">SUSCRIBITE A NUESTRO NEWSLETTER</h3>
@@ -107,7 +112,7 @@
             <a href="" target="_parent"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <div>
-            <p>&copy; 2024 Repuestos Originales. Todos los derechos reservados.</p>
+            <p class="colorFooterP">&copy; 2024 Repuestos Originales. Todos los derechos reservados.</p>
         </div>
 
     </footer>
