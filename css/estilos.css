@@ -1,9 +1,12 @@
+
+/*----------------------INICIO DE PAGINA WEB--------------------------*/
+
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-/* Reset y configuración básica */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,52 +17,58 @@ body{
     background-color: rgb(255, 250, 242);
   }
 
-  /* Estilos para pantallas pequeñas */
+ /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
+        height: auto;
+        padding: 10px;
     }
-
-    .header ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .header li {
-        margin: 10px 0;
-    }
-
+    
     .logo {
         margin-bottom: 10px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
 
-/* Estilos de Header */
+/* ----------------------ESTILOS HEADER-------------------------- */
 
 .header{
     background-color: rgb(145, 142, 135);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 20px;
     position: sticky;
     height: 70px;
     top: 0;
     z-index: 1000;
+
     .logo{
         width: 120px;
     }
+
     nav{
-   position: absolute;
-    left: 65%;
-    top: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     ul{
-      list-style: none;  
+      list-style: none; 
+      display: flex; 
     }
 
     li{
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 20px;
     }
     a{
         list-style: none;
@@ -75,7 +84,7 @@ body{
 
 
 
-/* Estilos de Main */
+/* ----------------------ESTILOS MAIN-------------------------- */
 
 .imagenFondoPrincipal {
     padding-top: 10px;
@@ -89,7 +98,6 @@ body{
     .contenedorTextoPrincipalIndex{
         margin:0 auto;
         margin-top: 30px;
-        /*border:2px solid  #510d1b;*/
         padding:10px;
         border-radius: 5px;
         text-align: center;
@@ -97,9 +105,9 @@ body{
         font-size: 10px;
         color: rgb(28, 27, 27);
         p {
-            font-family: 'Roboto', sans-serif; /* Fuente legible y moderna */
-            font-size: 18px; /* Tamaño ideal para la legibilidad */
-            color: #333; /* Color oscuro para buen contraste */
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px; 
+            color: #333; 
             
         }
         a{
@@ -111,8 +119,6 @@ body{
             border:2px solid black;
             padding:8px;
             border-radius:5px;
-            /*box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);*/
-
         }
     }
    
@@ -166,12 +172,12 @@ body{
     width: 80%;
     height: 80%;
     object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .galeria div img:hover {
-    transform: scale(1.1); /* Efecto de escala */
-    box-shadow: 0 4px 8px rgb(226, 226, 226); /* Sombra */
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgb(226, 226, 226); 
 }
 
 
@@ -185,9 +191,9 @@ body{
     margin-bottom: 10px;
 }
 
-/* Títulos y textos de Main */
+
 .colorMainH1 {
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-family: 'Playfair Display', serif;
     font-size: 2em;
     color: #333;
     text-align: center;
@@ -198,31 +204,35 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #333;
-    padding: 50px;
+    padding: 20px;
     
     text-align: center;
     margin-bottom: 20px;
 }
 
 .colorMainH3 {
-    font-family: 'Roboto', sans-serif; /* Fuente legible */
-    font-size: 20px; /* Tamaño más pequeño para subtítulos */
-    color: #83a80b; /* Color rojo oscuro */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px; 
+    color: #83a80b; 
     
 }
 
+.colorMainH4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px; 
+    color: #000000; 
+    text-align: center;
+    margin-top: 80px;
+}
+
 .colorMainP{
-    font-family: 'Montserrat', sans-serif; /* Fuente para párrafos en Footer */
-    font-size: 20px; /* Tamaño de párrafos en Footer */
-    color: #642929; /* Color específico para texto en Footer */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    color: #642929; 
     text-align: center;
 }
 
 
-
-
-
-/*NOSOTROS INDEX*/
 .nosotros {
     h1{
         text-align: center;
@@ -273,14 +283,7 @@ body{
 }
 
 
-
-
-
-
-/*FIN DEL ESTILOS DE INDEX*/
-
-
-/*GALERIA DE PAGINA DE PRODUCTOS*/
+/*----------------------GALERIA PARA PRODUCTOS--------------------------*/
 
 .galeriaGridRepuestos{
     width: 30%;
@@ -337,73 +340,54 @@ body{
 
 
 
-
-
-
-
-
-
-/* Estilos de Footer */
-
-/* Estilos Generales para el Footer */
-.footer{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+/* ----------------------ESTILOS FOOTER-------------------------- */
+.footer {
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 30px;
     background-color: black;
-    .logo{
-        width: 100px;
-    }
+    color: #fff;
 
-    ul{
-        list-style: none;
-      
-        a{
-            text-decoration: none;
-            color:  #51410d;
-            font-size: 1.5em;
-        } 
-        
-    }
-
+.logo {
+    width: 100px;
 }
 
-.fa-facebook{
-    font-size: 40px;
-    color: #474a92;
-    
-}        
-
-.fa-instagram{
-        font-size: 40px;
-        color: #e592a2;
-        
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-     
-.fa-whatsapp{
-        font-size: 40px;
-        color:rgb(44, 181, 44);
-        
+ul li {
+    margin-bottom: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #51410d;
+    font-size: 1.2em;
 }
 
 .colorFooterH1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     color: #167e11;
+    margin-bottom: 10px;
 }
 
 .colorFooterH2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: #591c0f;
+    margin-bottom: 10px;
 }
 
 .colorFooterH3 {
     font-size: 20px;
     color: #b7371a;
+    margin-bottom: 10px;
 }
 
 .colorFooterP {
@@ -415,10 +399,59 @@ body{
 }
 
 
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.fa-facebook {
+    color: #474a92;
+}
+
+.fa-instagram {
+    color: #e592a2;
+}
+
+.fa-whatsapp {
+    color: rgb(44, 181, 44);
+}
+
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .footer .logo, .colorFooterH1, .colorFooterH2, .colorFooterH3, .colorFooterP {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .fa-facebook, .fa-instagram, .fa-whatsapp {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
 
 
 
-/* Formulario */
+
+
+
+
+
+/* ----------------------FORMULARIOS--------------------------*/
 
 .contacto {
     background: linear-gradient(180deg, #f0f9f1 0%, #d7f5d9 100%); /* Cambia a un degradado más suave */
@@ -438,7 +471,7 @@ body{
     flex-direction: column;
 }
 
-/* Inputs y Select */
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -460,7 +493,6 @@ select:focus {
 }
 
 
-/* Botones */
 .botones {
     display: flex;
     gap: 10px;
@@ -485,7 +517,6 @@ select:focus {
     color: #fff;
 }
 
-/* Mapa */
 .mapa {
     margin-top: 20px;
     text-align: center;
@@ -496,3 +527,5 @@ iframe {
     height: 450px;
     border-radius: 8px;
 }
+
+/*----------------------FIN DE PAGINA WEB--------------------------*/
