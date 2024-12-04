@@ -17,28 +17,44 @@ body{
     background-color: rgb(255, 250, 242);
   }
 
- /* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+/* Estilos para pantallas medianas (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .header {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* Organiza elementos en columnas */
+        align-items: center; /* Centra los elementos */
         height: auto;
-        padding: 10px;
+        padding: 15px;
+        position: relative;
     }
-    
+
     .logo {
         margin-bottom: 10px;
+        width: 100px; /* Ajustar tamaño del logo si es necesario */
     }
 
-    nav ul {
-        flex-direction: column;
+    .nav ul {
+        display: flex;
+        flex-direction: column; /* Menú en formato vertical */
         align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
-    nav ul li {
+    .nav ul li {
         margin: 10px 0;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        font-size: 18px; /* Ajustar tamaño del texto */
+        color: #333;
     }
 }
 
+
+ 
 /* ----------------------ESTILOS HEADER-------------------------- */
 
 .header{
@@ -53,7 +69,7 @@ body{
     z-index: 1000;
 
     .logo{
-        width: 120px;
+        width: 100px;
     }
 
     nav{
@@ -86,15 +102,17 @@ body{
 
 /* ----------------------ESTILOS MAIN-------------------------- */
 
+
+
+/*INICIO MANEJO DE IMAGEN DE FONDO PARA EL MAIN*/
 .imagenFondoPrincipal {
+    height: 100vh;
     padding-top: 10px;
     padding-bottom: 50px;
     background-image: url("../assets/img/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
-    height: 100vh;
-
     .contenedorTextoPrincipalIndex{
         margin:0 auto;
         margin-top: 30px;
@@ -107,8 +125,7 @@ body{
         p {
             font-family: 'Roboto', sans-serif;
             font-size: 18px; 
-            color: #333; 
-            
+            color: #333;    
         }
         a{
             display:inline-block;
@@ -120,34 +137,28 @@ body{
             padding:8px;
             border-radius:5px;
         }
-    }
-   
+    } 
 }
+/*FIN MANEJO DE IMAGEN DE FONDO PARA EL MAIN*/
 
-.contenedorProductos {
-    background: linear-gradient(180deg, #6fd677 0%, #6fd677 0%); /* Degradado suave */
-    ;
-    
+
+.colorDeFondo{
+    background-color: #859ca0; /*COLOR DE FONDO PAGINA*/
 }
 
 .ubicacionImg{
-        background: linear-gradient(180deg, #ccd66f, #8fe88f);
+        text-align: center;
+        background-color: #859ca0; /* Fondo ligero */
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 40px;
         padding: 10px;
         height: 90vh;
-        padding-top: 70px;
+        padding-top: 60px;
     } 
-    .producto img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        text-align: center;
-    }
     
 
-
+/*INICIO EFECTOS PARA IMAGENES DE CADA REPUESTO*/
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -179,19 +190,37 @@ body{
     transform: scale(1.1); 
     box-shadow: 0 4px 8px rgb(226, 226, 226); 
 }
+/*FIN EFECTOS PARA IMAGENES DE CADA REPUESTO*/
+
+/*INICIO ESTILO PARA AGREGAR AL CARRITO*/
+.agregarCarrito {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Cambiado a blanco para un texto más limpio */
+    background-color: #4CAF50; /* Verde atractivo */
+    border-radius: 80px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
 
 
+.agregarCarrito:active {
+    transform: scale(0.95); /* Efecto de clic */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Menor sombra */
+}
+/*FIN ESTILO PARA AGREGAR AL CARRITO*/
 
+
+/*INICIO COLORES,TAMAÑO IMAGEN,CENTRADO*/
 .centradoMain{
     text-align: center;
 }
-
 .logoMain{
     width: 110px;
     margin-bottom: 10px;
 }
-
-
 .colorMainH1 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -199,7 +228,6 @@ body{
     text-align: center;
     padding-top: 20px;
 }
-
 .colorMainH2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
@@ -209,82 +237,116 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
-
 .colorMainH3 {
     font-family: 'Roboto', sans-serif; 
     font-size: 20px; 
-    color: #83a80b; 
+    text-align: center;
+    color: #0b69a8; 
+    
     
 }
-
 .colorMainH4{
     font-family: 'Roboto', sans-serif;
     font-size: 50px; 
     color: #000000; 
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .colorMainP{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px; 
+    font-size: 17px; 
     color: #642929; 
-    text-align: center;
 }
+/*FIN COLORES,TAMAÑO IMAGEN,CENTRADO*/
+
+
+
 
 
 .nosotros {
-    h1{
-        text-align: center;
-        padding-top: 20px;
-        font-size: 60px;
-    }
+    padding: 20px;
+    background-color: #859ca0; /* Fondo ligero */
+}
+
+.nosotros h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.contenedorNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: auto auto auto; /* Filas automáticas según el contenido */
+    grid-template-areas: 
+        "proposito nosotrosImagen margenes"
+        "mision nosotrosImagen promociones"
+        "vision nosotrosImagen ventas";   
+}
+.nosotrosImagen {
+    grid-area: nosotrosImagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.nosotrosImagen img {
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+.proposito {
+    grid-area: proposito;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+}
+.mision { 
+    grid-area: mision;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+}
+.vision {
+    grid-area: vision;
+    text-align: center;
+    padding: 10px;
+    padding-top: 100px;
+}
+.promociones{
+    grid-area: promociones;
+    text-align: center;
+    padding: 10px;
+    padding-top: 100px;
+}
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
     .contenedorNosotros {
-        margin: 0 auto;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 0.5fr,0.5f,1fr;
-        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
-                            "nuestraHistoria nosotrosImagen"
-                            "mision nosotrosImagen"
-                            "vision nosotrosImagen";
-        margin-top: 20px;
-        padding-top: 100px;
-        .nosotrosImagen {
-            grid-area: nosotrosImagen;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            img {
-                width: 80%;
-                height: 80%;
-                
-            }
-        }
+            "proposito"
+            "mision"
+            "vision"
+            "nosotrosImagen"
+            "promociones"
+    }
 
-        .nuestraHistoria {
-            grid-area: nuestraHistoria;
-            
-            
-        }
-
-        .mision {
-            grid-area: mision;
-            
-        }
-
-        .vision {
-            grid-area: vision;
-           
-        }
+    .nosotros h1 {
+        font-size: 40px;
     }
 }
 
 
-/*----------------------GALERIA PARA PRODUCTOS--------------------------*/
 
+
+/*----------------------GALERIA PARA PRODUCTOS--------------------------*/
+.color{
+    background-color: #859ca0; /* Fondo ligero */
+}
 .galeriaGridRepuestos{
     width: 30%;
     margin: 0 auto;
@@ -306,7 +368,7 @@ body{
     
     .galeriaGridRepuestos img:hover {
         transform: scale(1.1); /* Efecto de escala */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 8px rgba(184, 21, 21, 0.3);
     }
 
 
@@ -336,9 +398,7 @@ body{
             object-fit: cover;
            }
 
-
-
-
+    
 
 /* ----------------------ESTILOS FOOTER-------------------------- */
 .footer {
@@ -452,14 +512,16 @@ ul a {
 
 
 /* ----------------------FORMULARIOS--------------------------*/
-
+.colorF{
+    background-color: #859ca0;
 .contacto {
-    background: linear-gradient(180deg, #f0f9f1 0%, #d7f5d9 100%); /* Cambia a un degradado más suave */
+    background-color: #d6e6d5;
     padding: 20px;
     max-width: 800px;
     margin: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 }
 .formulario {
     display: grid;
