@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9576f67792.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -29,56 +29,42 @@
         </nav>
     </header>
 
-    <main class ="colorF">
-        <div class="contacto">
+    <main class="fondo">
+        <div class="formulario-container">
         <h1 class="colorMainH1">Comunicate Con Nosotros</h1>
         <h2 class="colorMainH2">Complete El Formulario</h2>
-        <form class="formulario">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Ingrese Su Nombre Completo" required name="nombre" id="nombre">
+        <form id="miFormulario">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+              <span class="error" id="errorNombre"></span>
             </div>
-
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" placeholder="Ingrese Su Apellido Completo" required name="apellido" id="apellido">
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <span class="error" id="errorApellido"></span>
+              </div>
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error" id="errorEmail"></span>
             </div>
-
-            <div>
-                <label for="pass">Contraseña:</label>
-                <input type="password" placeholder="Ingrese Su Contraseña" required name="pass" id="pass">
+            <div class="campo">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" name="password" required minlength="6">
+              <span class="error" id="errorPassword"></span>
             </div>
-
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Ingrese Su Email" required name="email" id="email">
-
-            </div>
-
-            <div>
-                <label for="provincia">Ingrese En Que Provincia Vive:</label>
-                <select name="provincia" id="provincia">
-                    <option value="1">Buenos Aires</option>
-                    <option value="2" selected>Capital Federal</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="telefono">Ingrese Su Telefono</label>
-                <input type="tel" placeholder="Ingrese nu numero de telefono" required name="telefono" id="telefono">
-            </div>
-
-            <div class="botones">
-                <input type="reset" value="Limpiar Formulario">
-                <input type="submit" value="Enviar Formulario">
-            </div>
-
-        </form>
+            <button type="submit">Enviar</button>
+          </form>
+        </div> 
 
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44184.690028738936!2d-58.48593936181691!3d-34.60297971561606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smopar%20argentina!5e0!3m2!1ses-419!2sar!4v1731005995228!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.475491934574!2d-58.418988425144256!3d-34.64269275955603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4fc96babf1%3A0xb1d8999bd3d7ae9a!2sRock%20%26%20Vida!5e0!3m2!1ses!2sar!4v1733012763854!5m2!1ses!2sar" width="600" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
         </div>
-    </div>
+        
+        
+    
     </main>
 
     <footer class="footer">
@@ -117,7 +103,8 @@
                 <i class="fa-brands fa-whatsapp"></i></a>
         </nav>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../js/validacion.js"></script>
 </body>
 
 </html>
