@@ -112,16 +112,16 @@ body{
     background-color: #859ca0; /*COLOR DE FONDO PAGINA*/
 }
 
-.ubicacionImg{
-        text-align: center;
-        background-color: #859ca0; /* Fondo ligero */
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 40px;
-        padding: 10px;
-        height: 90vh;
-        padding-top: 60px;
-    } 
+.ubicacionImg {
+    text-align: center;
+    background-color: #859ca0; /* Fondo ligero */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Las columnas se adaptan al ancho */
+    gap: 20px; /* Reduce el espacio entre los elementos */
+    padding: 10px;
+    height: auto; /* Cambia para evitar alturas fijas */
+    padding-top: 60px;
+}
     
 
 /*INICIO EFECTOS PARA IMAGENES DE CADA REPUESTO*/
@@ -543,112 +543,50 @@ ul a {
 }
 
 
-/* Estilos para pantallas medianas (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 10px;
-        position: relative;
-    }
 
-    .logo {
-        margin-bottom: 10px;
-        width: 80px; /* Tamaño más pequeño para pantallas medianas */
+@media (max-width: 768px) {
+    .ubicacionImg {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Tamaño más pequeño en pantallas móviles */
+        gap: 10px; /* Reduce el espacio entre elementos en dispositivos pequeños */
+        padding: 5px;
     }
-
-    .nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
     }
-
-    .nav ul li {
-        margin: 5px 0; /* Espaciado reducido */
-    }
-
-    .nav ul li a {
-        text-decoration: none;
-        font-size: 16px; /* Tamaño de texto ajustado */
-        color: #333;
-    }
-}
-
-/* Estilos para pantallas pequeñas (hasta 768px) */
-@media screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 70px; /* Tamaño aún más pequeño para móviles */
-        margin-bottom: 8px;
-    }
-
-    .nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .nav ul li {
-        margin: 8px 0;
-    }
-
-    .nav ul li a {
-        font-size: 14px; /* Texto más pequeño */
-    }
-
     .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+        flex-direction:column;
+        align-items:center;
+        text-align: center;
     }
 
     .footer ul {
-        flex-direction: column;
-        align-items: center;
-        margin: 15px 0;
+        margin-bottom: 20px; /* Espaciado entre secciones */
     }
-
-    .footer .logo, .colorFooterH1, .colorFooterH2, .colorFooterH3, .colorFooterP {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .fa-facebook, .fa-instagram, .fa-whatsapp {
-        font-size: 24px; /* Íconos más pequeños */
-        margin: 8px;
-    }
-
     .contenedorNosotros {
-        grid-template-columns: 1fr; /* Una sola columna */
-        grid-template-rows: auto auto auto auto auto; /* Más filas para mejor organización */
-        grid-template-areas: 
-            "proposito"
-            "mision"
-            "vision"
-            "nosotrosImagen"
-            "promociones";
+            grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+            grid-template-areas: 
+                "nosotrosImagen"
+                "proposito"
+                "mision"
+                "vision"
+                "promociones"
+                "margenes"
+                "ventas"; 
+        }
+    
+        .nosotrosImagen img {
+            height: 30vh; /* Reduce el tamaño de la imagen */
+        }
+    
+        .nosotrosImagen {
+            padding: 20px; /* Menor padding para móviles */
+        }
+    
+        .nosotros h1 {
+            font-size: 35px; /* Reduce el tamaño del título */
+        }
     }
 
-    .nosotros h1 {
-        font-size: 24px; /* Ajuste del título */
-        text-align: center;
-        margin: 10px 0;
-    }
-}
 
 
