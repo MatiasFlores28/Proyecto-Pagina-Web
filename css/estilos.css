@@ -17,41 +17,7 @@ body{
     background-color: rgb(255, 250, 242);
   }
 
-/* Estilos para pantallas medianas (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .header {
-        display: flex;
-        flex-direction: column; /* Organiza elementos en columnas */
-        align-items: center; /* Centra los elementos */
-        height: auto;
-        padding: 15px;
-        position: relative;
-    }
 
-    .logo {
-        margin-bottom: 10px;
-        width: 100px; /* Ajustar tamaño del logo si es necesario */
-    }
-
-    .nav ul {
-        display: flex;
-        flex-direction: column; /* Menú en formato vertical */
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .nav ul li {
-        margin: 10px 0;
-    }
-
-    .nav ul li a {
-        text-decoration: none;
-        font-size: 18px; /* Ajustar tamaño del texto */
-        color: #333;
-    }
-}
 
 
  
@@ -322,23 +288,7 @@ body{
     padding: 10px;
     padding-top: 100px;
 }
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    .contenedorNosotros {
-        grid-template-columns: 1fr; /* Una sola columna */
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "proposito"
-            "mision"
-            "vision"
-            "nosotrosImagen"
-            "promociones"
-    }
 
-    .nosotros h1 {
-        font-size: 40px;
-    }
-}
 
 
 
@@ -478,38 +428,6 @@ ul a {
 
 }
 
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .footer ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-    }
-
-    .footer .logo, .colorFooterH1, .colorFooterH2, .colorFooterH3, .colorFooterP {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    
-    .fa-facebook, .fa-instagram, .fa-whatsapp {
-        font-size: 30px;
-        margin: 10px;
-    }
-}
-
-
-
-
-
-
-
 
 /* ----------------------FORMULARIOS--------------------------*/
 .fondo{
@@ -622,4 +540,164 @@ ul a {
 
 .btn-vaciar:hover, .btn-finalizar:hover {
     background-color: #0056b3;
+}
+
+
+/* Estilos para pantallas medianas (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: column; /* Organiza elementos en columnas */
+        align-items: center; /* Centra los elementos */
+        height: auto;
+        padding: 15px;
+        position: relative;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        width: 100px; /* Ajustar tamaño del logo si es necesario */
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column; /* Menú en formato vertical */
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        font-size: 18px; /* Ajustar tamaño del texto */
+        color: #333;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .footer .logo, .colorFooterH1, .colorFooterH2, .colorFooterH3, .colorFooterP {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .fa-facebook, .fa-instagram, .fa-whatsapp {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedorNosotros {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "proposito"
+            "mision"
+            "vision"
+            "nosotrosImagen"
+            "promociones"
+    }
+
+    .nosotros h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: column; /* Organiza elementos en columnas */
+        align-items: center; /* Centra los elementos */
+        height: auto;
+        padding: 15px;
+        position: relative;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        width: 100px; /* Ajustar tamaño del logo si es necesario */
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column; /* Menú en formato vertical */
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        font-size: 18px; /* Ajustar tamaño del texto */
+        color: #333;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 980px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .footer .logo, .colorFooterH1, .colorFooterH2, .colorFooterH3, .colorFooterP {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .fa-facebook, .fa-instagram, .fa-whatsapp {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 980px) {
+    .contenedorNosotros {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "proposito"
+            "mision"
+            "vision"
+            "nosotrosImagen"
+            "promociones"
+    }
+
+    .nosotros h1 {
+        font-size: 40px;
+    }
 }
